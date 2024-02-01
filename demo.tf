@@ -1,5 +1,5 @@
 variable "prem" {
-  defdefault =  = 10
+  default = 10
 }
 
 output "prem" {

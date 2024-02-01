@@ -10,7 +10,13 @@ output "sag" {
   value = var.prem
 }
 
+variable "pi" {
+  default  =  {
+    name = "prem"
+    age  = "27"
+  }
+}
 
-output "sec" {
-  value = var.sagar
+output "sagar" {
+  value = var.pi
 }

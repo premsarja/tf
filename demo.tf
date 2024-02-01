@@ -5,3 +5,7 @@ variable "prem" {
 output "prem" {
   value = var.prem
 }
+
+output "sag" {
+  value = var.prem
+}

@@ -9,3 +9,8 @@ output "prem" {
 output "sag" {
   value = var.prem
 }
+
+
+output "sec" {
+  value = var.sagar
+}

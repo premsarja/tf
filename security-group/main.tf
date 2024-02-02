@@ -25,7 +25,7 @@ resource "aws_security_group" "sagar" {
 
 data "aws_ami" "ami" {
   most_recent      = true
-  name_regex       = "^ami-terraform"
+  name_regex       = "^ami-033c331c5ccbea9fd"
   owners           = ["self"]
 }
 
@@ -40,3 +40,4 @@ resource "aws_instance" "ami" {
     Name = "example-instance"
   }
 }
+

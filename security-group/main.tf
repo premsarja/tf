@@ -25,13 +25,13 @@ resource "aws_security_group" "sagar" {
 
 data "aws_ami" "ami" {
   most_recent      = true
-  name_regex       = "^ami-033c331c5ccbea9fd"
+  name_regex       = "^ami-terraform"
   owners           = ["self"]
 }
 
 
 resource "aws_instance" "ami" {
-  ami             = "data.aws_ami.ami.id" # Replace with your desired AMI ID"
+  ami             = data.aws_ami.ami.id # Replace with your desired AMI ID"
   instance_type   = "t2.micro"
   key_name        = "your-key-pair-name"     # Replace with your key pair name
   vpc_security_group_ids = [aws_security_group.sagar.id]

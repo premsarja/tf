@@ -4,7 +4,7 @@
 #   owners           = ["self"]
 # }
 
-resource "aws_instance" "ami" {
+resource "aws_instance" "example" {
   count          = length(var.howmanyyouwant)
   ami            = ami-0fe630eb857a6ec83                                 #Corrected reference to AMI ID
   instance_type  = "t3.micro"

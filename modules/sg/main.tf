@@ -18,7 +18,7 @@ resource "aws_security_group" "sagar" {
   }
 
   tags = {
-    Name = "allow_sagar"
+    Name = "allow_prem"
   }
 }
 

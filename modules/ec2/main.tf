@@ -41,4 +41,6 @@ resource "aws_instance" "ami" {
   }
 }
 
-variable "sg" {}
+variable "sg" {
+  default = ["${aws_security_group.sagar.id}"]
+}

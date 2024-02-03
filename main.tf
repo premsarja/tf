@@ -1,8 +1,8 @@
 module "ec2" {
-  source = "./ec2"
+  source = "./modules/ec2"
   sg    = module.sg.sgid
 }
 
 module "sg" {
-  source = "./sg"
+  source = "./modules/sg"
 }

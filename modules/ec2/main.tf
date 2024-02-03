@@ -42,5 +42,6 @@ resource "aws_instance" "ami" {
 }
 
 variable "sg" {
+  type    = set(string)
   default = ["${aws_security_group.sagar.id}"]
 }

@@ -41,4 +41,4 @@ resource "aws_instance" "ami" {
   }
 }
 
-variable "sg" {}
+variable "sgid" {}

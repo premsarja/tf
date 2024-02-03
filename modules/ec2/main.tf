@@ -34,10 +34,11 @@ resource "aws_instance" "ami" {
   ami             = data.aws_ami.ami.id # Replace with your desired AMI ID"
   instance_type   = "t2.micro"
 #   key_name        = "your-key-pair-name"     # Replace with your key pair name
-  vpc_security_group_ids = [aws_security_group.sagar.id]
+  vpc_security_group_ids = var.sg
 
   tags = {
     Name = "example-instance"
   }
 }
 
+variable "sg" {}
